@@ -18,6 +18,7 @@ export default class City extends Component {
         console.log(catagories);
 
         return (
+
             <React.Fragment>
                 <h1>Hot Spots!</h1>
                 {/* {catagories.map((e, i) => {
