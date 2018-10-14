@@ -15,8 +15,7 @@ export default class City extends Component {
     }
     render() {
         const catagories = this.state.events[0]
-        console.log(catagories);
-
+        catagories ? console.log(catagories.events.event) : null
         return (
             <React.Fragment>
                 <h1>Hot Spots!</h1>
