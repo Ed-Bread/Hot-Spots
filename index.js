@@ -24,11 +24,6 @@ app.get('/img/:keyword', async (req, res) => {
     res.send(images)
 })
 
-// app.get('/download/:url'), async (req, res) => {
-//     let { data } = await axios.get(`${this.params.keyword}`)
-//     res.json(data)
-// }
-
 let PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log("Listening on port " + PORT));
