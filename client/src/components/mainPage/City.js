@@ -24,7 +24,7 @@ export default class City extends Component {
                 <React.Fragment>
                     <h1>Hot Spots!</h1>
                     {catagories.events.event.map((e, i) => {
-                        return <Category events={e} cityName={this.props.cityName} images={images.results[i].links} key={i} />
+                        return <Category events={e} cityName={this.props.cityName} images={images.results[i].urls} key={i} />
                     })}
                 </React.Fragment>
             )
