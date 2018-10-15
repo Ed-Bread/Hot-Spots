@@ -11,7 +11,7 @@ export default class Cities extends Component {
                     <h1> Find Events </h1>
                     <ul>
                         <li className="miami">
-                            <Link to="/miami">Miami</Link>
+                            <Link to="/">Miami</Link>
                         </li>
                         <li className="newYork">
                             <Link to="/newYork">New York</Link>
@@ -21,7 +21,7 @@ export default class Cities extends Component {
                         </li>
                     </ul>
                     <hr />
-                    <Route path="/miami" render={() => <City cityName="miami" />} />
+                    <Route exact path="/" render={() => <City cityName="miami" />} />
                     <Route path="/newYork" render={() => <City cityName="ny" />} />
                     <Route path="/La" render={() => <City cityName="los+angeles" />} />
                 </div >
