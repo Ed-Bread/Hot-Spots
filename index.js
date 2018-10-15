@@ -13,7 +13,7 @@ app.get('/events/:city', async (req, res) => {
 })
 app.get('/events/:city/category/:category', async (req, res) => {
     const events = [];
-    let { data } = await axios.get(`http://api.eventful.com/json/events/search?app_key=rtwRNJGjF32csPmx&?...&location=${req.params.city}&category=${re.params.category}&date=today`)
+    let { data } = await axios.get(`http://api.eventful.com/json/events/search?app_key=rtwRNJGjF32csPmx&?...&location=${req.params.city}&category=${req.params.category}&date=today`)
     events.push(data)
     res.json(events)
 })
