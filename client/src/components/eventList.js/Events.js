@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import MapContainer from './MapContainer'
 export default class Events extends Component {
     render() {
         return (
@@ -9,7 +9,9 @@ export default class Events extends Component {
                 <p>Get more information <a href={this.props.events.venue_url}>here!</a></p>
 
                 <h4>Location:{this.props.events.venue_address},{this.props.events.city_name}, {this.props.events.region_name}</h4>
-                {/* {< Event events={this.props.events} />} */}
+                  <MapContainer long={this.props.events.longitude} lat={this.props.events.latitude} />
+
+
             </div>
         )
     }
