@@ -76,7 +76,6 @@ export default class Cities extends Component {
                     <Route path="/books" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />
                     <Route path="/nightlife" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />
                     <Route path="/science" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />
-
                 </div >
             </BrowserRouter >
         );
