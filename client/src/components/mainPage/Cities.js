@@ -26,7 +26,7 @@ export default class Cities extends Component {
                     <h1> Find Events </h1>
                     <ul>
                         <li onClick={() => { this.setCity('miami') }}>
-                            <Link to="/">Miami</Link>
+                            <Link to="/miami">Miami</Link>
                         </li>
                         <li onClick={() => { this.setCity('ny') }}>
                             <Link to="/ny">New York</Link>
@@ -64,7 +64,7 @@ export default class Cities extends Component {
                         </li>
                     </ul>
                     {/* City Info */}
-                    <Route exact path="/" render={() => <City cityName={this.state.cityName} />} />
+                    <Route exact path="/miami" render={() => <City cityName={this.state.cityName} />} />
                     <Route path="/ny" render={() => <City cityName={this.state.cityName} />} />
                     <Route path="/los+angeles" render={() => <City cityName={this.state.cityName} />} />
                     {/* Category Info */}
