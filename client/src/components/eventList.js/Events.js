@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import MapContainer from './MapContainer'
 export default class Events extends Component {
     render() {
         return (
@@ -10,7 +10,9 @@ export default class Events extends Component {
 
                 <h4>Location:{this.props.events.venue_address},{this.props.events.city_name}, {this.props.events.region_name}</h4>
                 <h5>Venue: {this.props.events.venue_name}</h5>
-                {/* {Space for Map} */}
+                  <MapContainer long={this.props.events.longitude} lat={this.props.events.latitude} />
+
+
             </div>
         )
     }
