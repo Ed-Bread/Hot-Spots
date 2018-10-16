@@ -23,16 +23,6 @@ app.get('/img/:keyword', async (req, res) => {
     images.push(data)
     res.send(images)
 })
-app.get('/img/category/:cat', async (req, res) => {
-    const images = [];
-    let { data } = await axios.get(`https://api.unsplash.com/search/photos?&query=${req.params.cat}%3E;%20,%20&client_id=e6fc74ee151383d272e0baa254236693152d29360832effd93b02ef2f867dae6`)
-    images.push(data)
-    res.send(images)
-})
-// app.get('/download/:url'), async (req, res) => {
-//     let { data } = await axios.get(`${this.params.keyword}`)
-//     res.json(data)
-// }
 
 let PORT = process.env.PORT || 5000;
 
