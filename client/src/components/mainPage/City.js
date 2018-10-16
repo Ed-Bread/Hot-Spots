@@ -33,8 +33,10 @@ export default class City extends Component {
                     })}
                 </React.Fragment>
             )
-        } else {
+        } else if (butt == null) {
             return <Loader />
+        } else {
+            return (<h1>No events Available, Try again tomorrow!</h1>)
         }
     }
 }

@@ -13,7 +13,7 @@ export default class Category extends Component {
                 <div>
                     <Link to={`/${this.props.cityName}/current`}>
                         <div>
-                            <img src={this.props.images.thumb} alt={`${this.props.events.title}`} />
+                            <img src={this.props.images.full} alt={`${this.props.events.title}`} />
                             <h2>{title}</h2>
                             <p>{description ? description.substring(0, 150) : null}...</p>
                         </div>
