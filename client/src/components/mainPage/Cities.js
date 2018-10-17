@@ -33,7 +33,7 @@ export default class Cities extends Component {
                 <div>
                     <nav className="navbar navbar-light navbar-expand-md navigation-clean">
                         <div className='container'>
-                            <Link className="nav-link" to="/miami">
+                            <Link className="nav-link" to="/">
                                 <a className="navbar-brand black">HS</a><button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
                             </Link>
                             <div className="collapse navbar-collapse" id="navcol-1">
