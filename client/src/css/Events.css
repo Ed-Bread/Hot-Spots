@@ -3,13 +3,10 @@
     margin: 5px 0px 5px;
     height: 550px;
 }
-.nav-link{
+.headerBar{
     width: 100%;
     display: flex;
     justify-content: space-between
-}
-.navbar-toggle{
-    float: right;
 }
 .map:nth-child(1) {
     height: 500px;
