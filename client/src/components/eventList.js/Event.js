@@ -1,4 +1,5 @@
 import React from 'react';
+const styleMap = {margin: "50px"};
 class Event extends React.Component {
 	constructor() {
 		super();
@@ -6,7 +7,6 @@ class Event extends React.Component {
 			:
 		}
 	}
-  <Events />
 	async componentDidMount() {
 		let movies = [];
 		let {data: movie1} = await axios.get('/movies/1');
