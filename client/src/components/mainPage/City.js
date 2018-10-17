@@ -27,7 +27,6 @@ export default class City extends Component {
         if (images && butt.events !== null) {
             return (
                 <React.Fragment>
-                    <h1>Hot Spots!</h1>
                     {butt.events.event.map((e, i) => {
                         return <Category events={e} cityName={this.props.cityName} images={images.results[i].urls} key={i} />
                     })}

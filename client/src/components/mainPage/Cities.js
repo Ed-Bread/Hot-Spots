@@ -5,7 +5,7 @@ import Background from './pic.jpeg';
 
 var sectionStyle = {
   width: "100%",
-  height: "400px",
+  height: "800px",
   backgroundImage: `url(${Background})`
 };
 
@@ -54,7 +54,7 @@ export default class Cities extends Component {
 
                                     <Link className="dropdown-item" role="presentation" onClick={() => { this.setCategory('music') }}  to="/music">Concerts</Link>
                                     
-                                    <Link className="dropdown-item" role="presentation" onClick={() => { this.setCategory('education') }}to="/education">Education</Link>
+                                    <Link className="dropdown-item" role="presentation" onClick={() => { this.setCategory('comedy') }}to="/comedy">Comedy</Link>
                                         
                                     <Link className="dropdown-item" role="presentation" onClick={() => { this.setCategory('movies') }}to="/film">Film</Link>
                                         
@@ -64,7 +64,7 @@ export default class Cities extends Component {
     
                                     <Link className="dropdown-item" role="presentation" onClick={() => { this.setCategory('books') }} to="/books">Literary &amp; Books</Link>
                                        
-                                    <Link className="dropdown-item" role="presentation" onClick={() => { this.setCategory('nightlife') }} to="/nightlife">Nightlife &amp; Singles</Link>
+                                    <Link className="dropdown-item" role="presentation" onClick={() => { this.setCategory('nightlife') }} to="/nightlife">Nightlife </Link>
                                         
                                     </div> 
                                  </li>    
@@ -80,17 +80,20 @@ export default class Cities extends Component {
                                     <section className="clean-block clean-hero" style={sectionStyle} >
                                         <div className='text'>
                                             <h2>HOT SPOT</h2>
-                                            <p>Ready When You Are</p><button class="btn btn-outline-light btn-lg" type="button">GO</button>
+                                            <p>Ready When You Are</p>
+                                            <Link className ="nav-link"to="/miami">
+                                            <button class="btn btn-outline-light btn-lg" type="button">GO</button>
+                                            </Link>
                                         </div>
                                     </section>      
-                     </div>
+                        </div>
                      } />
                     <Route exact path="/miami" render={() => <City cityName={this.state.cityName} />} />
                     <Route path="/ny" render={() => <City cityName={this.state.cityName} />} />
                     <Route path="/los+angeles" render={() => <City cityName={this.state.cityName} />} />
                     {/* Category Info */}
                     <Route path="/music" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />
-                    <Route path="/education" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />
+                    <Route path="/comedy" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />
                     <Route path="/film" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />
                     <Route path="/wine" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />
                     <Route path="/art" render={() => <City cityName={this.state.cityName} category={this.state.category} />} />

@@ -1,17 +1,19 @@
 
 .event {
-    margin-bottom: 10px;
+    margin: 5px 0px 5px;
    
 }
 
 #g-map:nth-child(1){
-    width: 500px !important;
-    height: 500px !important;
+    height: 700px !important;
+    width: 100% !important;
 }
-
+#g-map{
+    width: 100%;
+}
 #mapy {
-    width: 500px !important;
-    height: 500px !important;
+    width: 95% !important;
+    height: 100% !important;
 }
 /* .gm-style {
     width: 1px !important;
@@ -20,15 +22,34 @@
 
 .black{
     text-decoration: none !important;
-    color: black !important
+    color: black !important;
+    padding: 5px;
 }
 
-/* .container{
+.container{
     margin:0;
-    padding:0;
-} */
-
-
+    
+}
+.clean-block{
+    padding: 0px;
+}
+.clean-block.clean-post{
+    padding-top:30px;
+}
 .clean-block.clean-hero:before {
     background-color: transparent !important;
+    /* height: 100%; */
+}
+
+.navbar-brand{
+  font-size: 2em  
+}
+
+main .container {
+    box-shadow: 0 2px 19px;
+    padding: 0px;
+}
+
+.page landing-page{
+    height: 100%;
 }
