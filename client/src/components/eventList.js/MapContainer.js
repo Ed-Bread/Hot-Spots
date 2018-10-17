@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 export class MapContainer extends Component {
@@ -41,9 +40,7 @@ export class MapContainer extends Component {
             </address>
           </div>
         </InfoWindow>
-
       </Map>
-
     );
   }
 }
