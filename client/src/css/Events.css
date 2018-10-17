@@ -1,9 +1,12 @@
 
 .event {
     margin: 5px 0px 5px;
-   
-}
+    height: 550px;
 
+}
+.map:nth-child(1) {
+    height: 500px;
+}
 #g-map:nth-child(1){
     height: 700px !important;
     width: 100% !important;
@@ -24,12 +27,7 @@
     text-decoration: none !important;
     color: black !important;
     padding: 5px;
-}
-
-.container{
-    margin:0;
-    
-}
+}   
 .clean-block{
     padding: 0px;
 }
@@ -52,4 +50,7 @@ main .container {
 
 .page landing-page{
     height: 100%;
+}
+@media only screen and (max-width: 600px) {
+    
 }
