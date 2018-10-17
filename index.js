@@ -1,7 +1,6 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-console.log(i)
 app.use(express.static(__dirname + '/client/build'));
 
 app.get('/events/:city', async (req, res) => {

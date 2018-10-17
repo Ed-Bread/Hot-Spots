@@ -8,7 +8,6 @@ import "../../css/Events.css"
 
 export default class Category extends Component {
     render() {
-        // const styles = {height: "420px"};
 
         const blockSize = {height: "420px"};
 
