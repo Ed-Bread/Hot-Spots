@@ -2,7 +2,14 @@
 .event {
     margin: 5px 0px 5px;
     height: 550px;
-
+}
+.nav-link{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+.navbar-toggle{
+    float: right;
 }
 .map:nth-child(1) {
     height: 500px;
@@ -22,7 +29,9 @@
     width: 1px !important;
     height: 1px !important;
 } */
-
+.navbar-brand .black{
+    float: left;
+}
 .black{
     text-decoration: none !important;
     color: black !important;
