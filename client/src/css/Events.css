@@ -1,0 +1,34 @@
+
+.event {
+    margin-bottom: 10px;
+   
+}
+
+#g-map:nth-child(1){
+    width: 500px !important;
+    height: 500px !important;
+}
+
+#mapy {
+    width: 500px !important;
+    height: 500px !important;
+}
+/* .gm-style {
+    width: 1px !important;
+    height: 1px !important;
+} */
+
+.black{
+    text-decoration: none !important;
+    color: black !important
+}
+
+/* .container{
+    margin:0;
+    padding:0;
+} */
+
+
+.clean-block.clean-hero:before {
+    background-color: transparent !important;
+}

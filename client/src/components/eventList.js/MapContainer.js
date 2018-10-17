@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
@@ -44,6 +45,36 @@ export class MapContainer extends Component {
                   </InfoWindow>
 
       </Map>
+=======
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import "../../css/Events.css"
+
+export class MapContainer extends Component {
+
+  componentDidMount() {
+    let foo = document.getElementById("g-map").firstChild
+    foo.id = "mapy"
+    console.log(foo)
+}
+
+  render() {
+    const style = {
+      width: '10px',
+      height: '200px',
+
+    }
+    return (
+      <div id="g-map">
+        <Map google={this.props.google} zoom={14}
+          initialCenter={{
+            lat: this.props.lat,
+            lng: this.props.long,
+          }}
+          >
+          <Marker name={'Current location'} />
+        </Map>
+      </div>
+>>>>>>> b1659650006b4b6727ba164630742c69ef09b4bc
 
     );
   }
